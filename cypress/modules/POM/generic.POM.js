@@ -115,5 +115,8 @@ class GenericPOM {
   get bancaIntesaLink() {
     return cy.get("a[href='http://www.bancaintesa.rs']");
   }
+  get acceptCookiesBtn() {
+    return cy.get("button[id='gdpr-cookie-accept']");
+  }
 }
 export const genericPOM = new GenericPOM();

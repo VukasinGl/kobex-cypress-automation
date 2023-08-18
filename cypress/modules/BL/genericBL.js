@@ -2,6 +2,7 @@ import { genericPOM } from "../POM/generic.POM";
 
 class GenericBL {
   assertGenericElemets() {
+    genericPOM.acceptCookiesBtn.click();
     genericPOM.searchIcon.should("be.visible");
     genericPOM.homePageBtn
       .should("be.visible")
