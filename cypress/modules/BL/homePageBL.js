@@ -1,4 +1,4 @@
-import { homePagePOM } from "../POM/homePagePOM/homePagePOM";
+import { homePagePOM } from "../POM/homePagePOM";
 
 class HomePageBL {
   scrollLogosOnHomePage() {
