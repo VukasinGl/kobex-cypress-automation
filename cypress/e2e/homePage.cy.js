@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-import { genericBL } from "../modules/BL/genericBL";
+import { headerAndFooterBL } from "../modules/BL/headerAndFooterBL";
 import { homePageBL } from "../modules/BL/homePageBL";
 
 describe("Testing Home Page UI", () => {
@@ -7,7 +7,7 @@ describe("Testing Home Page UI", () => {
     cy.visit("/");
   });
   it("Assert all the elements on the home page", () => {
-    genericBL.assertGenericElemets();
+    headerAndFooterBL.assertGenericElemets();
     homePageBL.assertHomePageElements();
   });
 });
