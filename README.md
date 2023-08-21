@@ -12,4 +12,5 @@ Website link: [Kobex](https://kobex.rs/)
 npm i
 npm init
 npm install cypress --save -dev
+npm i cypress-real-events
 ```
