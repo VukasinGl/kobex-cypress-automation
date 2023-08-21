@@ -97,7 +97,6 @@ class BlancoDropDownMenuPOM {
     this.kakoOdabratiSudoperuLink.should("be.visible");
     this.blancoUnitBesprekornoIntegrisanaJedinicaLink.should("be.visible");
     this.materijaliIOdrzavanjeLink.should("be.visible");
-    this.materijaliIOdrzavanjeLink.should("be.visible");
     this.naciniUgradnjeSudoperaLink.should("be.visible");
     this.vodicZaSlavineLink.realHover();
     this.verzijeIVarijacijeLink.should("be.visible");
