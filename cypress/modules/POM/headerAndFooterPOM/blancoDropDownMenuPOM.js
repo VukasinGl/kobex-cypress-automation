@@ -1,5 +1,5 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
-class BlancoDropDownMenuPOM {
+class BlancoDropDownMenu {
   get vodicZaSudopereLink() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}news&cat=1']`).eq(1);
   }
@@ -165,4 +165,4 @@ class BlancoDropDownMenuPOM {
     this.drinkFilterLink.should("be.visible").and("contain", "drink.filter");
   }
 }
-export const blancoDropDownMenuPOM = new BlancoDropDownMenuPOM();
+export const blancoDropDownMenu = new BlancoDropDownMenu();
