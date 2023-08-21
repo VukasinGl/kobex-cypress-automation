@@ -4,7 +4,7 @@ import {
 } from "../POM/headerAndFooterPOM/headerAndFooterPOM";
 
 class HeaderAndFooterBL {
-  assertGenericElemets() {
+  assertHeaderAndFooterElemets() {
     headerAndFooterPOM.acceptCookiesBtn.click();
     headerAndFooterPOM.searchIcon.should("be.visible");
     headerAndFooterPOM.homePageBtn
@@ -12,7 +12,7 @@ class HeaderAndFooterBL {
       .and("have.attr", "width", "195")
       .and("have.attr", "height", "60");
     headerAndFooterPOM.b2bPrijavaBtn
-      .should("have.attr", "href", "https://kobex.rs/login")
+      .should("have.attr", "href", `${Cypress.env("baseUrl")}login`)
       .and("be.visible");
     headerAndFooterPOM.myCartBtn.should("be.visible");
     headerAndFooterPOM.blancoDropDownMenu

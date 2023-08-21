@@ -10,6 +10,4 @@ Website link: [Kobex](https://kobex.rs/)
 
 ```sh
 npm i
-npm init
-npm install cypress --save -dev
 ```

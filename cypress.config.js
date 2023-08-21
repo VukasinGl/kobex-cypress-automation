@@ -7,6 +7,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://kobex.rs/",
+    env: {
+      baseUrl: "https://kobex.rs/",
+    },
   },
 });

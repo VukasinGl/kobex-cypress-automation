@@ -5,12 +5,14 @@ class HeaderAndFooterPOM {
   get homePageBtn() {
     return cy
       .get(
-        "img[src='https://kobex.rs/uploads/webshop/kobex-635a5268e204e.png']"
+        `img[src='${Cypress.env(
+          "baseUrl"
+        )}uploads/webshop/kobex-635a5268e204e.png']`
       )
       .eq(1);
   }
   get b2bPrijavaBtn() {
-    return cy.get("a[href='https://kobex.rs/login']").eq(0);
+    return cy.get(`a[href='${Cypress.env("baseUrl")}login']`).eq(0);
   }
   get myCartBtn() {
     return cy.get("#miniCart");
@@ -28,53 +30,65 @@ class HeaderAndFooterPOM {
     return cy.get("a[href='/syskor']");
   }
   get oNamaBtn() {
-    return cy.get("a[href='https://kobex.rs/about-us']").eq(1);
+    return cy.get(`a[href='${Cypress.env("baseUrl")}about-us']`).eq(1);
   }
   get inspiracijeBtn() {
-    return cy.get("a[href='https://kobex.rs/news']").eq(1);
+    return cy.get(`a[href='${Cypress.env("baseUrl")}news']`).eq(1);
   }
   get kontaktBtn() {
-    return cy.get("a[href='https://kobex.rs/contact-us']").eq(1);
+    return cy.get(`a[href='${Cypress.env("baseUrl")}contact-us']`).eq(1);
   }
   get usloviKupovineBtn() {
-    return cy.get("a[href='https://kobex.rs/faq/uslovi-kupovine']").eq(0);
+    return cy
+      .get(`a[href='${Cypress.env("baseUrl")}faq/uslovi-kupovine']`)
+      .eq(0);
   }
   get odustanakOdKupovineBtn() {
-    return cy.get("a[href='https://kobex.rs/faq/odustanak-od-kupovine']").eq(0);
+    return cy
+      .get(`a[href='${Cypress.env("baseUrl")}faq/odustanak-od-kupovine']`)
+      .eq(0);
   }
   get dostavaBtn() {
-    return cy.get("a[href='https://kobex.rs/faq/dostava']").eq(0);
+    return cy.get(`a[href='${Cypress.env("baseUrl")}faq/dostava']`).eq(0);
   }
   get oNamaFooterLink() {
-    return cy.get("footer").find("a[href='https://kobex.rs/about-us']");
+    return cy.get(`footer`).find(`a[href='${Cypress.env("baseUrl")}about-us']`);
   }
   get polisaPrivatnostiFooterLink() {
-    return cy.get("a[href='https://kobex.rs/faq/polisa-privatnosti']");
+    return cy.get(`a[href='${Cypress.env("baseUrl")}faq/polisa-privatnosti']`);
   }
   get kontaktirajteNasFooterLink() {
-    return cy.get("footer").find("a[href='https://kobex.rs/contact-us']");
+    return cy
+      .get(`footer`)
+      .find(`a[href='${Cypress.env("baseUrl")}contact-us']`);
   }
   get usloviKupovineFooterLink() {
     return cy
-      .get("footer")
-      .find("a[href='https://kobex.rs/faq/uslovi-kupovine']");
+      .get(`footer`)
+      .find(`a[href='${Cypress.env("baseUrl")}faq/uslovi-kupovine']`);
   }
   get nacinIUsloviPlacanja() {
-    return cy.get("a[href='https://kobex.rs/faq/nain-i-uslovi-plaanja']");
+    return cy.get(
+      `a[href='${Cypress.env("baseUrl")}faq/nain-i-uslovi-plaanja']`
+    );
   }
   get dostavaFooterLink() {
-    return cy.get("footer").find("a[href='https://kobex.rs/faq/dostava']");
+    return cy
+      .get(`footer`)
+      .find(`a[href='${Cypress.env("baseUrl")}faq/dostava']`);
   }
   get usloviKoriscenjaFooterLink() {
-    return cy.get("a[href='https://kobex.rs/faq/uslovi-korienja']");
+    return cy.get(`a[href='${Cypress.env("baseUrl")}faq/uslovi-korienja']`);
   }
   get odustanakOdKupovineFooterLink() {
     return cy
-      .get("footer")
-      .find("a[href='https://kobex.rs/faq/odustanak-od-kupovine']");
+      .get(`footer`)
+      .find(`a[href='${Cypress.env("baseUrl")}faq/odustanak-od-kupovine']`);
   }
   get reklamacijePrigovorFooterLink() {
-    return cy.get("a[href='https://kobex.rs/faq/reklamacije-prigovor']");
+    return cy.get(
+      `a[href='${Cypress.env("baseUrl")}faq/reklamacije-prigovor']`
+    );
   }
   get phoneNum1Link() {
     return cy.get("a[href='tel:0216216959']");
@@ -86,7 +100,10 @@ class HeaderAndFooterPOM {
     return cy.get("a[href='mailto:web@kobex.rs']");
   }
   get homePageFooterBtn() {
-    return cy.get("footer").find("a[href='https://kobex.rs/']").eq(0);
+    return cy
+      .get("footer")
+      .find(`a[href='${Cypress.env("baseUrl")}']`)
+      .eq(0);
   }
   get backToTopOfThePageBtn() {
     return cy.get("a[title='Na početak strane']");
