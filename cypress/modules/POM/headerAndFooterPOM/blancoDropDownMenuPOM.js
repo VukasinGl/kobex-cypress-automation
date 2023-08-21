@@ -5,26 +5,34 @@ class BlancoDropDownMenuPOM {
   }
   get kakoOdabratiSudoperuLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}kako-odabrati-sudoperu']`)
+      .get(
+        `a[href='${Cypress.env("baseUrl")}news-details/kako-odabrati-sudoperu']`
+      )
       .eq(1);
   }
   get blancoUnitBesprekornoIntegrisanaJedinicaLink() {
     return cy
       .get(
         `a[href='${Cypress.env(
-          "newsUrl"
-        )}blanco-unit-besprekorno-integrisana-jedinica']`
+          "baseUrl"
+        )}news-details/blanco-unit-besprekorno-integrisana-jedinica']`
       )
       .eq(1);
   }
   get materijaliIOdrzavanjeLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}materijali-i-odravanje']`)
+      .get(
+        `a[href='${Cypress.env("baseUrl")}news-details/materijali-i-odravanje']`
+      )
       .eq(1);
   }
   get naciniUgradnjeSudoperaLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}naini-ugradnje-sudopera']`)
+      .get(
+        `a[href='${Cypress.env(
+          "baseUrl"
+        )}news-details/naini-ugradnje-sudopera']`
+      )
       .eq(1);
   }
   get vodicZaSlavineLink() {
@@ -32,43 +40,65 @@ class BlancoDropDownMenuPOM {
   }
   get verzijeIVarijacijeLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}verzije-i-varijacije']`)
+      .get(
+        `a[href='${Cypress.env("baseUrl")}news-details/verzije-i-varijacije']`
+      )
       .eq(1);
   }
   get kakoOdabratiSlavinuLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}kako-odabrati-slavinu']`)
+      .get(
+        `a[href='${Cypress.env("baseUrl")}news-details/kako-odabrati-slavinu']`
+      )
       .eq(1);
   }
   get slavinaIspredProzoraLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}slavina-ispred-prozora']`)
+      .get(
+        `a[href='${Cypress.env("baseUrl")}news-details/slavina-ispred-prozora']`
+      )
       .eq(1);
   }
   get drinkFilterNewsLink() {
-    return cy.get(`a[href='${Cypress.env("newsUrl")}drink-filter']`).eq(1);
+    return cy
+      .get(`a[href='${Cypress.env("baseUrl")}news-details/drink-filter']`)
+      .eq(1);
   }
   get prikljucakZaVoduLink() {
-    return cy.get(`a[href='${Cypress.env("newsUrl")}prikljuak-za-vodu']`).eq(1);
+    return cy
+      .get(`a[href='${Cypress.env("baseUrl")}news-details/prikljuak-za-vodu']`)
+      .eq(1);
   }
   get resenjaZaOtpadLink() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}news&cat=3']`).eq(1);
   }
   get zaFrontBezPostojeceFiokeLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}za-front-bez-postojee-fioke']`)
+      .get(
+        `a[href='${Cypress.env(
+          "baseUrl"
+        )}news-details/za-front-bez-postojee-fioke']`
+      )
       .eq(1);
   }
   get zaFrontSaPostojecomFiokomLink() {
     return cy
-      .get(`a[href='${Cypress.env("newsUrl")}za-front-sa-postojeom-fiokom']`)
+      .get(
+        `a[href='${Cypress.env(
+          "baseUrl"
+        )}news-details/za-front-sa-postojeom-fiokom']`
+      )
       .eq(1);
   }
   get zaVrataOrmaricaLink() {
-    return cy.get(`a[href='${Cypress.env("newsUrl")}za-vrata-ormarica']`).eq(1);
+    return cy
+      .get(`a[href='${Cypress.env("baseUrl")}news-details/za-vrata-ormarica']`)
+      .eq(1);
   }
   get zaRadnuPlocuLink() {
-    return cy.get(`a[href='${Cypress.env("newsUrl")}za-radnu-plou']`).eq(1);
+    return cy
+      .get(`a[href='${Cypress.env("baseUrl")}news-details/za-radnu-plou']`)
+      .eq(1);
   }
   get sudopereLink() {
     return cy.get("a[href='/blanco/sudopere']").eq(1);
@@ -94,23 +124,45 @@ class BlancoDropDownMenuPOM {
   assertBlancoDropdownMenu() {
     headerAndFooterPOM.blancoDropDownMenu.trigger("mouseover");
     this.vodicZaSudopereLink.realHover();
-    this.kakoOdabratiSudoperuLink.should("be.visible");
-    this.blancoUnitBesprekornoIntegrisanaJedinicaLink.should("be.visible");
-    this.materijaliIOdrzavanjeLink.should("be.visible");
-    this.naciniUgradnjeSudoperaLink.should("be.visible");
+    this.kakoOdabratiSudoperuLink
+      .should("be.visible")
+      .and("have.text", "Kako odabrati sudoperu?");
+    this.blancoUnitBesprekornoIntegrisanaJedinicaLink
+      .should("be.visible")
+      .and("have.text", "BLANCO UNIT - besprekorno integrisana jedinica");
+    this.materijaliIOdrzavanjeLink
+      .should("be.visible")
+      .and("have.text", "Materijali i održavanje");
+    this.naciniUgradnjeSudoperaLink
+      .should("be.visible")
+      .and("have.text", "Načini ugradnje sudopera");
     this.vodicZaSlavineLink.realHover();
-    this.verzijeIVarijacijeLink.should("be.visible");
-    this.kakoOdabratiSlavinuLink.should("be.visible");
-    this.slavinaIspredProzoraLink.should("be.visible");
-    this.drinkFilterNewsLink.should("be.visible");
-    this.prikljucakZaVoduLink.should("be.visible");
-    this.sudopereLink.should("be.visible");
-    this.slavinaLink.should("be.visible");
-    this.sistemiZaRazdvajanjeOtpada.should("be.visible");
-    this.dozerLink.should("be.visible");
-    this.blancoPriborLink.should("be.visible");
-    this.meljacBioOtpadaLink.should("be.visible");
-    this.drinkFilterLink.should("be.visible");
+    this.verzijeIVarijacijeLink
+      .should("be.visible")
+      .and("have.text", "Verzije i varijacije");
+    this.kakoOdabratiSlavinuLink
+      .should("be.visible")
+      .and("have.text", "Kako odabrati slavinu?");
+    this.slavinaIspredProzoraLink
+      .should("be.visible")
+      .and("have.text", "Slavina ispred prozora");
+    this.drinkFilterNewsLink
+      .should("be.visible")
+      .and("have.text", "Drink.filter");
+    this.prikljucakZaVoduLink
+      .should("be.visible")
+      .and("have.text", "Priključak za vodu");
+    this.sudopereLink.should("be.visible").and("contain", "Sudopere");
+    this.slavinaLink.should("be.visible").and("contain", "Slavina");
+    this.sistemiZaRazdvajanjeOtpada
+      .should("be.visible")
+      .and("contain", "Sistem za razdvajanje otpada");
+    this.dozerLink.should("be.visible").and("contain", "Dozer");
+    this.blancoPriborLink.should("be.visible").and("contain", "BLANCO Pribor");
+    this.meljacBioOtpadaLink
+      .should("be.visible")
+      .and("contain", "Meljač BIO otpada");
+    this.drinkFilterLink.should("be.visible").and("contain", "drink.filter");
   }
 }
 export const blancoDropDownMenuPOM = new BlancoDropDownMenuPOM();
