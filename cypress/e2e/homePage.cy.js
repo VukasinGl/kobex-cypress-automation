@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-import "cypress-real-events/support";
 
 import { headerAndFooterBL } from "../modules/BL/headerAndFooterBL";
 import { homePageBL } from "../modules/BL/homePageBL";
