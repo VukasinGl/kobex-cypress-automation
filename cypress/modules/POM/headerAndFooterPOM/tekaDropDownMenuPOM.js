@@ -1,6 +1,6 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
 
-class TekaDropDownMenuPOM {
+class TekaDropDownMenu {
   get tekaTehnologijaLink() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}news&cat=7`).eq(1);
   }
@@ -56,4 +56,4 @@ class TekaDropDownMenuPOM {
     this.ploceLink.should("be.visible").and("contain", "Ploče");
   }
 }
-export const tekaDropDownMenuPOM = new TekaDropDownMenuPOM();
+export const tekaDropDownMenu = new TekaDropDownMenu();
