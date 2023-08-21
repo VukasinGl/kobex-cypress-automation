@@ -1,6 +1,6 @@
 class HeaderAndFooterPOM {
   get searchIcon() {
-    return cy.contains(`Pretraga artikla`);
+    return cy.contains("Pretraga artikla");
   }
   get homePageBtn() {
     return cy
@@ -15,19 +15,19 @@ class HeaderAndFooterPOM {
     return cy.get(`a[href='${Cypress.env("baseUrl")}login']`).eq(0);
   }
   get myCartBtn() {
-    return cy.get(`#miniCart`);
+    return cy.get("#miniCart");
   }
   get blancoDropDownMenu() {
-    return cy.get(`a[href='/blanco']`);
+    return cy.get("a[href='/blanco']");
   }
   get electroluxDropDownMenu() {
-    return cy.get(`a[href='/electrolux']`);
+    return cy.get("a[href='/electrolux']");
   }
   get tekaDropDownMenu() {
-    return cy.get(`a[href='/teka']`);
+    return cy.get("a[href='/teka']");
   }
   get syskorDropDownMenu() {
-    return cy.get(`a[href='/syskor']`);
+    return cy.get("a[href='/syskor']");
   }
   get oNamaBtn() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}about-us']`).eq(1);
@@ -91,49 +91,49 @@ class HeaderAndFooterPOM {
     );
   }
   get phoneNum1Link() {
-    return cy.get(`a[href='tel:0216216959']`);
+    return cy.get("a[href='tel:0216216959']");
   }
   get phoneNum2Link() {
-    return cy.get(`a[href='tel:0216216955']`);
+    return cy.get("a[href='tel:0216216955']");
   }
   get emailLink() {
-    return cy.get(`a[href='mailto:web@kobex.rs']`);
+    return cy.get("a[href='mailto:web@kobex.rs']");
   }
   get homePageFooterBtn() {
     return cy
-      .get(`footer`)
+      .get("footer")
       .find(`a[href='${Cypress.env("baseUrl")}']`)
       .eq(0);
   }
   get backToTopOfThePageBtn() {
-    return cy.get(`a[title='Na početak strane']`);
+    return cy.get("a[title='Na početak strane']");
   }
   get facebookLink() {
-    return cy.get(`a[href='https://www.facebook.com/blancoSrbija']`);
+    return cy.get("a[href='https://www.facebook.com/blancoSrbija']");
   }
   get instagramLink() {
-    return cy.get(`a[href='https://www.instagram.com/blanco_srbija/']`);
+    return cy.get("a[href='https://www.instagram.com/blanco_srbija/']");
   }
   get youTubeLink() {
     return cy.get(
-      `a[href='https://www.youtube.com/@kobexsrbija-blancogermany5608']`
+      "a[href='https://www.youtube.com/@kobexsrbija-blancogermany5608']"
     );
   }
   get masterCardLink() {
     return cy.get(
-      `a[href='http://www.mastercard.com/rs/consumer/credit-cards.html']`
+      "a[href='http://www.mastercard.com/rs/consumer/credit-cards.html']"
     );
   }
   get visaLink() {
     return cy.get(
-      `a[href='https://rs.visa.com/pay-with-visa/security-and-assistance/protected-everywhere.html']`
+      "a[href='https://rs.visa.com/pay-with-visa/security-and-assistance/protected-everywhere.html']"
     );
   }
   get bancaIntesaLink() {
-    return cy.get(`a[href='http://www.bancaintesa.rs']`);
+    return cy.get("a[href='http://www.bancaintesa.rs']");
   }
   get acceptCookiesBtn() {
-    return cy.get(`button[id='gdpr-cookie-accept']`);
+    return cy.get("button[id='gdpr-cookie-accept']");
   }
 }
 export const headerAndFooterPOM = new HeaderAndFooterPOM();
