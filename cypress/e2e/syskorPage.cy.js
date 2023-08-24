@@ -1,0 +1,22 @@
+/// <reference types="Cypress" />
+import { headerAndFooterBL } from "../modules/BL/headerAndFooterBL";
+import { blancoDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/blancoDropDownMenuPOM";
+import { electroluxDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/electroluxDropDownMenuPOM";
+import { tekaDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/tekaDropDownMenuPOM";
+import { syskorDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
+import { syskorPageBL } from "../modules/BL/syskorBL/syskorPageBL";
+describe("Testing Syskor page UI", () => {
+  before(() => {
+    cy.visit(`${Cypress.env("baseUrl")}`);
+  });
+  it("Assert all the elements on the Syskor page", () => {
+    syskorPageBL.assertSyskorPage();
+  });
+  after(() => {
+    headerAndFooterBL.assertHeaderAndFooterElemets();
+    blancoDropDownMenuPOM.assertBlancoDropdownMenu();
+    electroluxDropDownMenuPOM.assertElectroluxDropDownMenu();
+    tekaDropDownMenuPOM.assertTekaDropDownMenu();
+    syskorDropDownMenuPOM.assertSyskorDropDownMenu();
+  });
+});
