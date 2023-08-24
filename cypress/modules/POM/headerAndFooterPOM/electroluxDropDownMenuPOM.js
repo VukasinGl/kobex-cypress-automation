@@ -1,5 +1,5 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
-class ElectroluxDropDownMenu {
+class ElectroluxDropDownMenuPOM {
   get ploceLink() {
     return cy.get("a[href='/electrolux/ploce']").eq(1);
   }
@@ -50,4 +50,4 @@ class ElectroluxDropDownMenu {
       .and("contain", "ELECTROLUX Pribor");
   }
 }
-export const electroluxDropDownMenu = new ElectroluxDropDownMenu();
+export const electroluxDropDownMenuPOM = new ElectroluxDropDownMenuPOM();

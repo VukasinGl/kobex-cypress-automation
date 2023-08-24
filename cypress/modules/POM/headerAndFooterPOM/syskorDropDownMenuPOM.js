@@ -1,5 +1,5 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
-class SyskorDropDownMenu {
+class SyskorDropDownMenuPOM {
   get syskorProizvodiLink() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}news&cat=6']`).eq(1);
   }
@@ -33,4 +33,4 @@ class SyskorDropDownMenu {
     this.mkaLink.should("be.visible").and("contain", "MKA");
   }
 }
-export const syskorDropDownMenu = new SyskorDropDownMenu();
+export const syskorDropDownMenuPOM = new SyskorDropDownMenuPOM();

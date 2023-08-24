@@ -91,13 +91,13 @@ class HeaderAndFooterPOM {
     );
   }
   get phoneNum1Link() {
-    return cy.get("a[href='tel:0216216959']");
+    return cy.get("footer").find("a[href='tel:0216216959']");
   }
   get phoneNum2Link() {
-    return cy.get("a[href='tel:0216216955']");
+    return cy.get("footer").find("a[href='tel:0216216955']");
   }
   get emailLink() {
-    return cy.get("a[href='mailto:web@kobex.rs']");
+    return cy.get("footer").find("a[href='mailto:web@kobex.rs']");
   }
   get homePageFooterBtn() {
     return cy

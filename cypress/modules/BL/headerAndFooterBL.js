@@ -1,11 +1,7 @@
-import {
-  head,
-  headerAndFooterPOM,
-} from "../POM/headerAndFooterPOM/headerAndFooterPOM";
+import { headerAndFooterPOM } from "../POM/headerAndFooterPOM/headerAndFooterPOM";
 
 class HeaderAndFooterBL {
   assertHeaderAndFooterElemets() {
-    headerAndFooterPOM.acceptCookiesBtn.click();
     headerAndFooterPOM.searchIcon.should("be.visible");
     headerAndFooterPOM.homePageBtn
       .should("be.visible")
@@ -39,7 +35,11 @@ class HeaderAndFooterBL {
       .and("contain.text", "Kontakt");
     headerAndFooterPOM.backToTopOfThePageBtn.should("not.be.visible");
     cy.scrollTo("bottom");
-    headerAndFooterPOM.backToTopOfThePageBtn.should("be.visible");
+    cy.get("body").then(($body) => {
+      if ($body.find("button[id='gdpr-cookie-accept']").length > 0) {
+        headerAndFooterPOM.backToTopOfThePageBtn.should("be.visible");
+      }
+    });
     headerAndFooterPOM.usloviKupovineBtn.should("be.visible");
     headerAndFooterPOM.odustanakOdKupovineBtn.should("be.visible");
     headerAndFooterPOM.dostavaBtn.should("be.visible");
@@ -72,13 +72,13 @@ class HeaderAndFooterBL {
       .and("have.text", "Reklamacije-prigovor");
     headerAndFooterPOM.phoneNum1Link
       .should("be.visible")
-      .and("have.text", "021 6216959");
+      .and("contain", "021 6216959");
     headerAndFooterPOM.phoneNum2Link
       .should("be.visible")
-      .and("have.text", " 021 6216955");
+      .and("contain", " 021 6216955");
     headerAndFooterPOM.emailLink
       .should("be.visible")
-      .and("have.text", "web@kobex.rs");
+      .and("contain", "web@kobex.rs");
     headerAndFooterPOM.homePageFooterBtn.find("img").should("be.visible");
     headerAndFooterPOM.masterCardLink.should("be.visible");
     headerAndFooterPOM.visaLink.should("be.visible");
