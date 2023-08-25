@@ -11,4 +11,5 @@ module.exports = defineConfig({
       baseUrl: "https://kobex.rs/",
     },
   },
+  video: false,
 });
