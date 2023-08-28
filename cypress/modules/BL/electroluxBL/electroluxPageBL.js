@@ -1,5 +1,6 @@
 import { headerAndFooterPOM } from "../../POM/headerAndFooterPOM/headerAndFooterPOM";
 import { electroluxPagePOM } from "../../POM/electroluxPOM/electroluxPagePOM";
+
 class ElectroluxPageBL {
   assertElectroluxPage() {
     headerAndFooterPOM.electroluxDropDownMenu.click();

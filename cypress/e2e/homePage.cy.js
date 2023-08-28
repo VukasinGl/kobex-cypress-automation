@@ -15,9 +15,11 @@ describe("Testing Home Page UI", () => {
     tekaDropDownMenuPOM.assertTekaDropDownMenu();
     syskorDropDownMenuPOM.assertSyskorDropDownMenu();
   });
+
   it("Assert all the elements on the home page", () => {
     homePageBL.assertHomePageElements();
   });
+
   after(() => {
     headerAndFooterBL.assertHeaderAndFooterElemets();
   });

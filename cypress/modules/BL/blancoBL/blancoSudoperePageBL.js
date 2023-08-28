@@ -1,6 +1,7 @@
 import { headerAndFooterPOM } from "../../POM/headerAndFooterPOM/headerAndFooterPOM";
 import { blancoDropDownMenuPOM } from "../../POM/headerAndFooterPOM/blancoDropDownMenuPOM";
 import { blancoSudoperePagePOM } from "../../POM/blancoPOM/blancoSudoperePagePOM";
+
 class BlancoSudoperePageBL {
   assertBlancoSudoperePage() {
     headerAndFooterPOM.blancoDropDownMenu.trigger("mouseover");

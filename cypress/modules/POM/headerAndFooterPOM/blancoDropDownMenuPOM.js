@@ -1,4 +1,5 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
+
 class BlancoDropDownMenuPOM {
   get vodicZaSudopereLink() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}news&cat=1']`).eq(1);

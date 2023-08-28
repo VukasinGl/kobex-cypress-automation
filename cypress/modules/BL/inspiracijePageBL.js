@@ -1,5 +1,6 @@
 import { headerAndFooterPOM } from "../POM/headerAndFooterPOM/headerAndFooterPOM";
 import { inspiracijePagePOM } from "../POM/inspiracijePagePOM";
+
 class InspiracijePageBL {
   assertInspiracijePage() {
     headerAndFooterPOM.inspiracijeBtn.click();

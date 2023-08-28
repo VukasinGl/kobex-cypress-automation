@@ -1,5 +1,6 @@
 import { blancoPagePOM } from "../../POM/blancoPOM/blancoPagePOM";
 import { headerAndFooterPOM } from "../../POM/headerAndFooterPOM/headerAndFooterPOM";
+
 class BlancoPageBL {
   assertBlancoPage() {
     headerAndFooterPOM.blancoDropDownMenu.click();
