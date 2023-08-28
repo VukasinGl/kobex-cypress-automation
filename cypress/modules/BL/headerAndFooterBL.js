@@ -2,6 +2,13 @@ import { headerAndFooterPOM } from "../POM/headerAndFooterPOM/headerAndFooterPOM
 
 class HeaderAndFooterBL {
   assertHeaderAndFooterElemets() {
+    cy.get("body").then(($body) => {
+      if ($body.find("button[id='gdpr-cookie-accept']").length > 0) {
+        headerAndFooterPOM.prihvatiKolaciceBtn.click();
+      }
+    });
+    cy.scrollTo("top");
+    headerAndFooterPOM.myCartBtn.should("be.visible");
     headerAndFooterPOM.searchIcon.should("be.visible");
     headerAndFooterPOM.homePageBtn
       .should("be.visible")
@@ -10,7 +17,6 @@ class HeaderAndFooterBL {
     headerAndFooterPOM.b2bPrijavaBtn
       .should("have.attr", "href", `${Cypress.env("baseUrl")}login`)
       .and("be.visible");
-    headerAndFooterPOM.myCartBtn.should("be.visible");
     headerAndFooterPOM.blancoDropDownMenu
       .trigger("mouseover")
       .should("be.visible")
@@ -33,10 +39,11 @@ class HeaderAndFooterBL {
     headerAndFooterPOM.kontaktBtn
       .should("be.visible")
       .and("contain.text", "Kontakt");
-    headerAndFooterPOM.backToTopOfThePageBtn.should("not.be.visible");
     cy.scrollTo("bottom");
-    cy.get("body").then(($body) => {
-      if ($body.find("button[id='gdpr-cookie-accept']").length > 0) {
+    cy.url().then((item) => {
+      if (item.includes("about-us") || item.includes("syskor")) {
+        headerAndFooterPOM.backToTopOfThePageBtn.should("not.be.visible");
+      } else {
         headerAndFooterPOM.backToTopOfThePageBtn.should("be.visible");
       }
     });
@@ -48,7 +55,7 @@ class HeaderAndFooterBL {
       .and("have.text", "O nama");
     headerAndFooterPOM.polisaPrivatnostiFooterLink
       .should("be.visible")
-      .and("have.text", "Polisa privatnosti");
+      .and("contain", "Polisa privatnosti");
     headerAndFooterPOM.kontaktirajteNasFooterLink
       .should("be.visible")
       .and("have.text", "Kontaktirajte nas");
@@ -88,4 +95,5 @@ class HeaderAndFooterBL {
     headerAndFooterPOM.youTubeLink.should("be.visible");
   }
 }
+
 export const headerAndFooterBL = new HeaderAndFooterBL();

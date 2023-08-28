@@ -132,7 +132,7 @@ class HeaderAndFooterPOM {
   get bancaIntesaLink() {
     return cy.get("a[href='http://www.bancaintesa.rs']");
   }
-  get acceptCookiesBtn() {
+  get prihvatiKolaciceBtn() {
     return cy.get("button[id='gdpr-cookie-accept']");
   }
 }
