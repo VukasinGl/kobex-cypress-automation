@@ -7,12 +7,12 @@ import { tekaDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/tekaDr
 import { syskorDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
 import { blancoSudoperePageBL } from "../../modules/BL/blancoBL/blancoSudoperePageBL";
 
-describe("Testing kontakt page UI", () => {
+describe("Testing blanco sudopere page UI", () => {
   before(() => {
     cy.visit(`${Cypress.env("baseUrl")}`);
   });
 
-  it("Assert all the elements on the kontakt page", () => {
+  it("Assert all the elements on the blanco sudopere page", () => {
     blancoSudoperePageBL.assertBlancoSudoperePage();
   });
 
