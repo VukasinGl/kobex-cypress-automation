@@ -1,4 +1,5 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
+
 class SyskorDropDownMenuPOM {
   get syskorProizvodiLink() {
     return cy.get(`a[href='${Cypress.env("baseUrl")}news&cat=6']`).eq(1);

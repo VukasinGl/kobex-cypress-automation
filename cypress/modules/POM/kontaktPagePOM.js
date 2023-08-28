@@ -1,4 +1,5 @@
 import { googleMapKobex } from "../../fixtures/testData";
+
 class KontaktPagePOM {
   get title() {
     return cy.get("h1");

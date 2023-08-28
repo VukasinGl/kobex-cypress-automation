@@ -1,4 +1,5 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM";
+
 class ElectroluxDropDownMenuPOM {
   get ploceLink() {
     return cy.get("a[href='/electrolux/ploce']").eq(1);

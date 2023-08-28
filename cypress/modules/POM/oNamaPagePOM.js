@@ -1,5 +1,6 @@
 import { headerAndFooterPOM } from "./headerAndFooterPOM/headerAndFooterPOM";
 import { oNamaPageData } from "../../fixtures/testData";
+
 class ONamaPagePOM {
   get oNamaTitle() {
     return cy.get("h1").eq(1);

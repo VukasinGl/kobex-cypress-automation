@@ -1,5 +1,6 @@
 import { headerAndFooterPOM } from "../POM/headerAndFooterPOM/headerAndFooterPOM";
 import { kontaktPagePOM } from "../POM/kontaktPagePOM";
+
 class KontaktPageBL {
   assertKontaktPage() {
     headerAndFooterPOM.kontaktBtn.click();
