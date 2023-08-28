@@ -7,6 +7,7 @@ class HeaderAndFooterBL {
         headerAndFooterPOM.prihvatiKolaciceBtn.click();
       }
     });
+    cy.scrollTo("top");
     headerAndFooterPOM.myCartBtn.should("be.visible");
     headerAndFooterPOM.searchIcon.should("be.visible");
     headerAndFooterPOM.homePageBtn
