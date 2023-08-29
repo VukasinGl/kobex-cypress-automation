@@ -41,7 +41,6 @@ class HeaderAndFooterBL {
       .and("contain.text", "Kontakt");
     cy.scrollTo("bottom");
     cy.url().then((item) => {
-      cy.log(item);
       if (
         item.includes("about-us") ||
         item.includes("id=-1000121") ||
