@@ -41,7 +41,11 @@ class HeaderAndFooterBL {
       .and("contain.text", "Kontakt");
     cy.scrollTo("bottom");
     cy.url().then((item) => {
-      if (item.includes("about-us") || item.includes("syskor")) {
+      if (
+        item.includes("about-us") ||
+        item.includes("id=-1000121") ||
+        item.includes("syskor")
+      ) {
         headerAndFooterPOM.backToTopOfThePageBtn.should("not.be.visible");
       } else {
         headerAndFooterPOM.backToTopOfThePageBtn.should("be.visible");
