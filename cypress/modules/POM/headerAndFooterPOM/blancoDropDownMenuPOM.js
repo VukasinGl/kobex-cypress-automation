@@ -107,7 +107,7 @@ class BlancoDropDownMenuPOM {
   get slavinaLink() {
     return cy.get("a[href='/blanco/slavina']").eq(1);
   }
-  get sistemiZaRazdvajanjeOtpada() {
+  get sistemiZaRazdvajanjeOtpadaLink() {
     return cy.get("a[href='/blanco/sistem-za-razdvajanje-otpada']").eq(1);
   }
   get dozerLink() {
@@ -155,7 +155,7 @@ class BlancoDropDownMenuPOM {
       .and("have.text", "Priključak za vodu");
     this.sudopereLink.should("be.visible").and("contain", "Sudopere");
     this.slavinaLink.should("be.visible").and("contain", "Slavina");
-    this.sistemiZaRazdvajanjeOtpada
+    this.sistemiZaRazdvajanjeOtpadaLink
       .should("be.visible")
       .and("contain", "Sistem za razdvajanje otpada");
     this.dozerLink.should("be.visible").and("contain", "Dozer");
