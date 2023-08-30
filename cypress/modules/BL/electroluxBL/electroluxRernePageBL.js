@@ -11,7 +11,6 @@ class ElectroluxRernePageBL {
       .should("be.visible")
       .and("contain", "Artikli na stanju")
       .and("contain", "Izdvajamo")
-      .and("contain", "")
       .and("contain", "Način ugradnje")
       .and("contain", "NAČIN ČIŠĆENJA")
       .and("contain", "ZAPREMINA")
