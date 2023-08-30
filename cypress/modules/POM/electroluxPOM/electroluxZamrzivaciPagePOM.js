@@ -1,6 +1,6 @@
-class ElectroluxFrizideriPagePOM {
+class ElectroluxZamrzivaciPagePOM {
   get title() {
-    return cy.get("h1").contains("ELECTROLUX - Frižideri");
+    return cy.get("h1").contains("ELECTROLUX - Zamrzivači");
   }
   get artikliNaStanjuFilter() {
     return cy.get("#stanje_div");
@@ -11,29 +11,23 @@ class ElectroluxFrizideriPagePOM {
   get izdvajamoFilter() {
     return cy.get("#izdvojeni_div");
   }
-  get kombinovaniFilter() {
-    return cy.get("div[id='KOMBINOVANI-list-1']");
-  }
   get nacinUgradnjeFilter() {
     return cy.get("div[id='Način ugradnje-list-1']");
   }
   get bojaUredjajaFilter() {
     return cy.get("div[id='BOJA UREĐAJA-list-1']");
   }
-  get vrstaHladjenjaFilter() {
-    return cy.get("div[id='VRSTA HLAĐENJA-list-1']");
-  }
   get sirinaUredjajaFilter() {
     return cy.get("div[id='ŠIRINA UREĐAJA-list-1']");
-  }
-  get komoraFilter() {
-    return cy.get("div[id='KOMORA-list-1']");
   }
   get visinaFilter() {
     return cy.get("div[id='VISINA-list-1']");
   }
   get ukupnaZapreminaFilter() {
     return cy.get("div[id='UKUPNA ZAPREMINA-list-1']");
+  }
+  get noFrostFilter() {
+    return cy.get("div[id='NO FROST-list-1']");
   }
   get sortirajDropDownMenu() {
     return cy.get("#view-option-sort");
@@ -60,4 +54,4 @@ class ElectroluxFrizideriPagePOM {
     return cy.get("form[id='filteri']");
   }
 }
-export const electroluxFrizideriPagePOM = new ElectroluxFrizideriPagePOM();
+export const electroluxZamrzivaciPagePOM = new ElectroluxZamrzivaciPagePOM();
