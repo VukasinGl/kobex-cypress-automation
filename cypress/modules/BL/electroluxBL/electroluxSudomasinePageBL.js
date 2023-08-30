@@ -6,6 +6,7 @@ class ElectroluxSudomasinePageBL {
   assertElectroluxSudomasinePage() {
     headerAndFooterPOM.electroluxDropDownMenu.trigger("mouseover");
     electroluxDropDownMenuPOM.sudomasineLink.click();
+    electroluxSudomasinePagePOM.title.should("be.visible");
     electroluxSudomasinePagePOM.filteri
       .and("contain", "Artikli na stanju")
       .and("contain", "Izdvajamo")

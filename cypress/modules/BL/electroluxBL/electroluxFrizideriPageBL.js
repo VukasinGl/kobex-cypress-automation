@@ -6,6 +6,7 @@ class ElectroluxFrizideriPageBL {
   assertElectroluxFrizideriPage() {
     headerAndFooterPOM.electroluxDropDownMenu.trigger("mouseover");
     electroluxDropDownMenuPOM.frizideriLink.click();
+    electroluxFrizideriPagePOM.title.should("be.visible");
     electroluxFrizideriPagePOM.filteri
       .and("contain", "Artikli na stanju")
       .and("contain", "Izdvajamo")
