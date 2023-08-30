@@ -1,6 +1,6 @@
 class ElectroluxFrizideriPagePOM {
   get title() {
-    return cy.get("h1").contains("ELECTROLUX - Sudomašine");
+    return cy.get("h1").contains("ELECTROLUX - Frižideri");
   }
   get artikliNaStanjuFilter() {
     return cy.get("#stanje_div");
