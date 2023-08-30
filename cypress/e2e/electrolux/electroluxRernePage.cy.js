@@ -5,15 +5,15 @@ import { blancoDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/blan
 import { electroluxDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/electroluxDropDownMenuPOM";
 import { tekaDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/tekaDropDownMenuPOM";
 import { syskorDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
-import { electroluxPlocePageBL } from "../../modules/BL/electroluxBL/electroluxPlocePageBL";
+import { electroluxRernePageBL } from "../../modules/BL/electroluxBL/electroluxRernePageBL";
 
-describe("Testing electrolux ploce page UI", () => {
+describe("Testing electrolux rerne page UI", () => {
   before(() => {
     cy.visit(`${Cypress.env("baseUrl")}`);
   });
 
-  it("Assert all the elements on the electrolux ploce page", () => {
-    electroluxPlocePageBL.assertElectroluxPlocePage();
+  it("Assert all the elements on the electrolux rerne page", () => {
+    electroluxRernePageBL.assertElectroluxRernePage();
   });
 
   after(() => {
