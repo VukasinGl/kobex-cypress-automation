@@ -7,12 +7,12 @@ import { tekaDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/tekaDr
 import { syskorDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
 import { electroluxPlocePageBL } from "../../modules/BL/electroluxBL/electroluxPlocePageBL";
 
-describe("Testing blanco drink.filter page UI", () => {
+describe("Testing electrolux ploce page UI", () => {
   before(() => {
     cy.visit(`${Cypress.env("baseUrl")}`);
   });
 
-  it("Assert all the elements on the blanco drink.filter page", () => {
+  it("Assert all the elements on the electrolux ploce page", () => {
     electroluxPlocePageBL.assertElectroluxPlocePage();
   });
 
