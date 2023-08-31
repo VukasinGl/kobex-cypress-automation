@@ -45,7 +45,8 @@ class HeaderAndFooterBL {
         item.includes("about-us") ||
         item.includes("id=-1000121") ||
         item.includes("syskor") ||
-        item.includes("id=-1001117")
+        item.includes("id=-1001117") ||
+        item.includes("id=-1001123")
       ) {
         headerAndFooterPOM.backToTopOfThePageBtn.should("not.be.visible");
       } else {
