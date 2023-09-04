@@ -15,7 +15,7 @@ class ElectroluxRernePagePOM {
     return cy.get("div[id='Način ugradnje-list-1']");
   }
   get nacinCiscenjaFilter() {
-    return cy.get("div[id='Način ugradnje-list-1']");
+    return cy.get("div[id='NAČIN ČIŠĆENJA-list-1']");
   }
   get zapreminaFilter() {
     return cy.get("div[id='ZAPREMINA-list-1']");
