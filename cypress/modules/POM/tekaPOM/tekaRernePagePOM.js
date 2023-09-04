@@ -1,6 +1,6 @@
-class ElectroluxRernePagePOM {
+class TekaRernePagePOM {
   get title() {
-    return cy.get("h1").contains("ELECTROLUX - Rerne");
+    return cy.get("h1").contains("TEKA - Rerne");
   }
   get artikliNaStanjuFilter() {
     return cy.get("#stanje_div");
@@ -11,17 +11,14 @@ class ElectroluxRernePagePOM {
   get izdvajamoFilter() {
     return cy.get("#izdvojeni_div");
   }
-  get nacinUgradnjeFilter() {
-    return cy.get("div[id='Način ugradnje-list-1']");
+  get bojaUredjajaFilter() {
+    return cy.get("div[id='BOJA UREĐAJA-list-1']");
   }
   get nacinCiscenjaFilter() {
     return cy.get("div[id='NAČIN ČIŠĆENJA-list-1']");
   }
   get zapreminaFilter() {
     return cy.get("div[id='ZAPREMINA-list-1']");
-  }
-  get bojaUredjajaFilter() {
-    return cy.get("div[id='BOJA UREĐAJA-list-1']");
   }
   get upravljanjeFilter() {
     return cy.get("div[id='UPRAVLJANJE-list-1']");
@@ -54,4 +51,4 @@ class ElectroluxRernePagePOM {
     return cy.get("form[id='filteri']");
   }
 }
-export const electroluxRernePagePOM = new ElectroluxRernePagePOM();
+export const tekaRernePagePOM = new TekaRernePagePOM();
