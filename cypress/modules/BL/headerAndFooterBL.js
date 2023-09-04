@@ -45,6 +45,7 @@ class HeaderAndFooterBL {
         item.includes("about-us") ||
         item.includes("id=-1000121") ||
         item.includes("syskor") ||
+        item.includes("id=-1001317") ||
         item.includes("id=-1001117") ||
         item.includes("id=-1001322") ||
         item.includes("id=-1001518") ||
