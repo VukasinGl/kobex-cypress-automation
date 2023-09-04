@@ -7,7 +7,7 @@ import { tekaDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/tekaDr
 import { syskorDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
 import { tekaFrizideriPageBL } from "../../modules/BL/tekaBL/tekaFrizideriPageBL";
 
-describe("Testing teka kafe frizideri page UI", () => {
+describe("Testing teka frizideri page UI", () => {
   before(() => {
     cy.visit(`${Cypress.env("baseUrl")}`);
   });
