@@ -7,7 +7,6 @@ class ElectroluxAspiratoriPageBL {
     headerAndFooterPOM.electroluxDropDownMenu.trigger("mouseover");
     electroluxDropDownMenuPOM.aspiratoriLink.click();
     electroluxAspiratoriPagePOM.title.should("be.visible");
-
     electroluxAspiratoriPagePOM.filteri
       .and("contain", "Artikli na stanju")
       .and("contain", "Izdvajamo")
