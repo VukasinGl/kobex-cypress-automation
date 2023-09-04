@@ -1,11 +1,11 @@
 /// <reference types="Cypress" />
 
-import { headerAndFooterBL } from "../modules/BL/headerAndFooterBL";
-import { blancoDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/blancoDropDownMenuPOM";
-import { electroluxDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/electroluxDropDownMenuPOM";
-import { tekaDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/tekaDropDownMenuPOM";
-import { syskorDropDownMenuPOM } from "../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
-import { syskorPageBL } from "../modules/BL/syskorBL/syskorPageBL";
+import { headerAndFooterBL } from "../../modules/BL/headerAndFooterBL";
+import { blancoDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/blancoDropDownMenuPOM";
+import { electroluxDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/electroluxDropDownMenuPOM";
+import { tekaDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/tekaDropDownMenuPOM";
+import { syskorDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
+import { syskorPageBL } from "../../modules/BL/syskorBL/syskorPageBL";
 
 describe("Testing Syskor page UI", () => {
   before(() => {
