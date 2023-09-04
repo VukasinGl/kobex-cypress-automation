@@ -5,15 +5,15 @@ import { blancoDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/blan
 import { electroluxDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/electroluxDropDownMenuPOM";
 import { tekaDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/tekaDropDownMenuPOM";
 import { syskorDropDownMenuPOM } from "../../modules/POM/headerAndFooterPOM/syskorDropDownMenuPOM";
-import { tekaFrizideriPageBL } from "../../modules/BL/tekaBL/tekaFrizideriPageBL";
+import { tekaAspiratoriPageBL } from "../../modules/BL/tekaBL/tekaAspiratoriPageBL";
 
-describe("Testing teka frizideri page UI", () => {
+describe("Testing teka aspiratori page UI", () => {
   before(() => {
     cy.visit(`${Cypress.env("baseUrl")}`);
   });
 
-  it("Assert all the elements on the teka frizideri page", () => {
-    tekaFrizideriPageBL.assertTekaFrizideriPage();
+  it("Assert all the elements on the teka aspiratori page", () => {
+    tekaAspiratoriPageBL.assertTekaAspiratoriPage();
   });
 
   after(() => {
