@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import { assertFiltersBL } from "../modules/BL/assertFiltersBL";
+import { assertBlancoSudopereFiltersBL } from "../../modules/BL/blancoBL/assertBlancoSudopereFiltersBL";
 
 describe("Asssert filters on product pages", () => {
   beforeEach(() => {
@@ -8,154 +8,154 @@ describe("Asssert filters on product pages", () => {
   });
 
   it("Assert Blanco - Sudopere page filters - Izdvajamo filter filter", () => {
-    assertFiltersBL.assertIzdvajamoFilter();
+    assertBlancoSudopereFiltersBL.assertIzdvajamoFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Metod ugradnje - ugradne filter filter", () => {
-    assertFiltersBL.assertUgradneFilter();
+    assertBlancoSudopereFiltersBL.assertUgradneFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Metod ugradnje - podgradne filter filter", () => {
-    assertFiltersBL.assertPodgradneFilter();
+    assertBlancoSudopereFiltersBL.assertPodgradneFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Materijal - Inox filter", () => {
-    assertFiltersBL.assertInoxFilter();
+    assertBlancoSudopereFiltersBL.assertInoxFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Materijal - Silgranit filter", () => {
-    assertFiltersBL.assertSilgranitFilter();
+    assertBlancoSudopereFiltersBL.assertSilgranitFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Materijal - Keramika filter", () => {
-    assertFiltersBL.assertKeramikaFilter();
+    assertBlancoSudopereFiltersBL.assertKeramikaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 30cm filter", () => {
-    assertFiltersBL.assertElement30cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement30cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 40cm filter", () => {
-    assertFiltersBL.assertElement40cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement40cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 45cm filter", () => {
-    assertFiltersBL.assertElement45cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement45cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 50cm filter", () => {
-    assertFiltersBL.assertElement50cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement50cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 60cm filter", () => {
-    assertFiltersBL.assertElement60cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement60cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 80cm filter", () => {
-    assertFiltersBL.assertElement80cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement80cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - 90cm filter", () => {
-    assertFiltersBL.assertElement90cmFilter();
+    assertBlancoSudopereFiltersBL.assertElement90cmFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Element - Ugaona filter", () => {
-    assertFiltersBL.assertElementUgaonaFilter();
+    assertBlancoSudopereFiltersBL.assertElementUgaonaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Broj korita - 1 korito filter", () => {
-    assertFiltersBL.assert1KoritoFilter();
+    assertBlancoSudopereFiltersBL.assert1KoritoFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Broj korita - 1 korito sa ocedjivacem filter", () => {
-    assertFiltersBL.assert1KoritoSaOcedjivacemFilter();
+    assertBlancoSudopereFiltersBL.assert1KoritoSaOcedjivacemFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Broj korita - 2 korita filter", () => {
-    assertFiltersBL.assert2KoritaFilter();
+    assertBlancoSudopereFiltersBL.assert2KoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Broj korita - 2 korita sa ocedjivacem filter", () => {
-    assertFiltersBL.assert2KoritaSaOcedjivacemFilter();
+    assertBlancoSudopereFiltersBL.assert2KoritaSaOcedjivacemFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Dubina korita - do 150mm filter", () => {
-    assertFiltersBL.assertDo150mmDubinaKoritaFilter();
+    assertBlancoSudopereFiltersBL.assertDo150mmDubinaKoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Dubina korita - od 186mm do 204mm filter", () => {
-    assertFiltersBL.assertOd186Do204mmDubinaKoritaFilter();
+    assertBlancoSudopereFiltersBL.assertOd186Do204mmDubinaKoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Dubina korita - od 150mm do 165mm filter", () => {
-    assertFiltersBL.assertOd150Do165mmDubinaKoritaFilter();
+    assertBlancoSudopereFiltersBL.assertOd150Do165mmDubinaKoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Dubina korita - od 166mm do 185mm filter", () => {
-    assertFiltersBL.assertOd166Do185mmDubinaKoritaFilter();
+    assertBlancoSudopereFiltersBL.assertOd166Do185mmDubinaKoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Dubina korita - preko 205mm filter", () => {
-    assertFiltersBL.assertPreko205mmDubinaKoritaFilter();
+    assertBlancoSudopereFiltersBL.assertPreko205mmDubinaKoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Crna filter", () => {
-    assertFiltersBL.assertCrnaBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertCrnaBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Antracit filter", () => {
-    assertFiltersBL.assertAntracitBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertAntracitBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Stena siva filter", () => {
-    assertFiltersBL.assertStenaSivaBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertStenaSivaBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Vulkan siva filter", () => {
-    assertFiltersBL.assertVulkanSivaBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertVulkanSivaBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Alumetalik filter", () => {
-    assertFiltersBL.assertAlumetalikBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertAlumetalikBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Bela filter", () => {
-    assertFiltersBL.assertBelaBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertBelaBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Neznobela filter", () => {
-    assertFiltersBL.assertNeznobelaBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertNeznobelaBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Tartuf filter", () => {
-    assertFiltersBL.assertTartufBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertTartufBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Kafa filter", () => {
-    assertFiltersBL.assertKafaBojaSilgranitaFilter();
+    assertBlancoSudopereFiltersBL.assertKafaBojaSilgranitaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja keramike - Crna filter", () => {
-    assertFiltersBL.assertCrnaBojaKeramikeFilter();
+    assertBlancoSudopereFiltersBL.assertCrnaBojaKeramikeFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja keramike - Bazalt filter", () => {
-    assertFiltersBL.assertBazaltBojaKeramikeFilter();
+    assertBlancoSudopereFiltersBL.assertBazaltBojaKeramikeFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja keramike - Kristalno bela filter", () => {
-    assertFiltersBL.assertKristalnoBelaBojaKeramikeFilter();
+    assertBlancoSudopereFiltersBL.assertKristalnoBelaBojaKeramikeFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja keramike - Magnolija filter", () => {
-    assertFiltersBL.assertMagnolijaBojaKeramikeFilter();
+    assertBlancoSudopereFiltersBL.assertMagnolijaBojaKeramikeFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Podizac cepa - Bez podizaca filter", () => {
-    assertFiltersBL.assertBezPodizacaCepaFilter();
+    assertBlancoSudopereFiltersBL.assertBezPodizacaCepaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Podizac cepa - Sa podizacem filter", () => {
-    assertFiltersBL.assertSaPodizacemCepaFilter();
+    assertBlancoSudopereFiltersBL.assertSaPodizacemCepaFilter();
   });
 });

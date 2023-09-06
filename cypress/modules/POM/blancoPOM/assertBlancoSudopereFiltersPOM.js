@@ -1,4 +1,4 @@
-class AssertFiltersPOM {
+class AssertBlancoSudopereFiltersPOM {
   get stanjeCheckbox() {
     return cy.get("input[id='stanje']");
   }
@@ -126,4 +126,5 @@ class AssertFiltersPOM {
     return cy.get("div[class='prd-img-area']");
   }
 }
-export const assertFiltersPOM = new AssertFiltersPOM();
+export const assertBlancoSudopereFiltersPOM =
+  new AssertBlancoSudopereFiltersPOM();
