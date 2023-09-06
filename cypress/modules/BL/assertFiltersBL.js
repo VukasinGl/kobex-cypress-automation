@@ -1,6 +1,8 @@
 import { assertFiltersPOM } from "../POM/assertFiltersPOM";
 
 class AssertFiltersBL {
+  // Assertions that are written as comments are left this way until all products have their characteristics uploaded!
+
   assertIzdvajamoFilter() {
     assertFiltersPOM.izdvajamoCheckbox.should("not.be.checked");
     assertFiltersPOM.izdvajamoCheckbox.check({ force: true });
