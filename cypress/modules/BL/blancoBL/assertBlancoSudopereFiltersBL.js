@@ -1,4 +1,5 @@
 import { assertBlancoSudopereFiltersPOM } from "../../POM/blancoPOM/assertBlancoSudopereFiltersPOM";
+
 class AssertBlancoSudopereFiltersBL {
   // Assertions that are written as comments are left this way until all products have their characteristics uploaded!
 
