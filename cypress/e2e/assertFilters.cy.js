@@ -4,7 +4,7 @@ import { assertFiltersBL } from "../modules/BL/assertFiltersBL";
 
 describe("Asssert filters on product pages", () => {
   beforeEach(() => {
-    cy.visit(`${Cypress.env("blancoSudopereUrl")}`);
+    cy.visit(`${Cypress.env("baseUrl")}blanco/sudopere`);
   });
 
   it("Assert Blanco - Sudopere page filters - Izdvajamo filter filter", () => {

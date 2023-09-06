@@ -9,7 +9,6 @@ module.exports = defineConfig({
     },
     env: {
       baseUrl: "https://kobex.rs/",
-      blancoSudopereUrl: "https://kobex.rs/blanco/sudopere",
     },
   },
   video: false,
