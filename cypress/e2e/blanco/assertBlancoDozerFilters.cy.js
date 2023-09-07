@@ -36,7 +36,7 @@ describe("Assert filters on product pages", () => {
   });
 
   it("Assert Blanco - Dozer page filters - Nezbo bela filter", () => {
-    assertBlancoDozerFiltersBL.assertBelaFilter();
+    assertBlancoDozerFiltersBL.assertNeznobelaFilter();
   });
 
   it("Assert Blanco - Dozer page filters - Tartuf filter", () => {
