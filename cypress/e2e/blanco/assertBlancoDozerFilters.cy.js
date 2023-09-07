@@ -70,6 +70,7 @@ describe("Assert filters on product pages", () => {
   it("Assert Blanco - Slavine page filters - InoxFinish UltraResist filter", () => {
     assertBlancoDozerFiltersBL.assertInoxFinishUltraResistFilter();
   });
+
   it("Assert Blanco - Slavine page filters - Inox Finish filter", () => {
     assertBlancoDozerFiltersBL.assertInoxFinishFilter();
   });
