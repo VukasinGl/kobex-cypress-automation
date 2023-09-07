@@ -52,7 +52,7 @@ describe("Assert filters on product pages", () => {
   });
 
   it("Assert Blanco- Slavine page filters - Nezbo bela filter", () => {
-    assertBlancoSlavinaFiltersBL.assertBelaFilter();
+    assertBlancoSlavinaFiltersBL.assertNeznobelaFilter();
   });
 
   it("Assert Blanco- Slavine page filters - Tartuf filter", () => {
