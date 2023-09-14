@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { assertElectroluxZamrzivaciFiltersPOM } from "../modules/POM/electroluxPOM/assertElectroluxZamrzivaciFiltersPOM";
+
+Cypress.Commands.add("assertFilters", (checkbox, string) => {
+  checkbox.should("not.be.checked");
+  checkbox.check({ force: true });
+  checkbox.should("be.checked");
+  assertElectroluxZamrzivaciFiltersPOM.productCharacteristics.should(
+    "contain",
+    `${string}`
+  );
+  assertElectroluxZamrzivaciFiltersPOM.ponistiBtn.click();
+});
