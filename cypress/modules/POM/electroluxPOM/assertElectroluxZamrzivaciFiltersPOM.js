@@ -1,10 +1,4 @@
 class AssertElectroluxZamrzivaciFiltersPOM {
-  get stanjeCheckbox() {
-    return cy.get("input[id='stanje']");
-  }
-  get izdvajamoCheckbox() {
-    return cy.get("#izdvojeni_div");
-  }
   get visina186cmCheckbox() {
     return cy.get("input[id='a10626a']");
   }
@@ -43,12 +37,6 @@ class AssertElectroluxZamrzivaciFiltersPOM {
   }
   get sirina60cmCheckbox() {
     return cy.get("input[id='a8823a']");
-  }
-  get ponistiBtn() {
-    return cy.contains("Poništi");
-  }
-  get productCharacteristics() {
-    return cy.get("ul[class='product-characteristics text-center']");
   }
 }
 export const assertElectroluxZamrzivaciFiltersPOM =
