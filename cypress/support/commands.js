@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { universalGettersPOM } from "../modules/POM/universalGettersPOM";
+
+Cypress.Commands.add("assertFilters", (checkbox, string) => {
+  checkbox.should("not.be.checked");
+  checkbox.check({ force: true });
+  checkbox.should("be.checked");
+  universalGettersPOM.productCharacteristics.should("contain", `${string}`);
+  universalGettersPOM.ponistiBtn.click();
+});
