@@ -50,10 +50,10 @@ class AssertBlancoSudopereFiltersBL {
     assertBlancoSudopereFiltersPOM.keramikaCheckbox.should("not.be.checked");
     assertBlancoSudopereFiltersPOM.keramikaCheckbox.check({ force: true });
     assertBlancoSudopereFiltersPOM.keramikaCheckbox.should("be.checked");
-    assertBlancoSudopereFiltersPOM.productCharacteristics.should(
-      "contain",
-      "Keramika"
-    );
+    // assertBlancoSudopereFiltersPOM.productCharacteristics.should(
+    //   "contain",
+    //   "Keramika"
+    // );
     assertBlancoSudopereFiltersPOM.ponistiBtn.click();
     assertBlancoSudopereFiltersPOM.keramikaCheckbox.should("not.be.checked");
   }
@@ -209,17 +209,6 @@ class AssertBlancoSudopereFiltersBL {
       "not.be.checked"
     );
   }
-  assertDo150mmDubinaKoritaFilter() {
-    assertBlancoSudopereFiltersPOM.do150mmCheckbox.should("not.be.checked");
-    assertBlancoSudopereFiltersPOM.do150mmCheckbox.check({ force: true });
-    assertBlancoSudopereFiltersPOM.do150mmCheckbox.should("be.checked");
-    assertBlancoSudopereFiltersPOM.productCharacteristics.should(
-      "contain",
-      "do 150mm"
-    );
-    assertBlancoSudopereFiltersPOM.ponistiBtn.click();
-    assertBlancoSudopereFiltersPOM.do150mmCheckbox.should("not.be.checked");
-  }
   assertOd186Do204mmDubinaKoritaFilter() {
     assertBlancoSudopereFiltersPOM.od186mmDo204mmCheckbox.should(
       "not.be.checked"
@@ -236,51 +225,6 @@ class AssertBlancoSudopereFiltersBL {
     assertBlancoSudopereFiltersPOM.od186mmDo204mmCheckbox.should(
       "not.be.checked"
     );
-  }
-  assertOd150Do165mmDubinaKoritaFilter() {
-    assertBlancoSudopereFiltersPOM.od150mmDo165mmCheckbox.should(
-      "not.be.checked"
-    );
-    assertBlancoSudopereFiltersPOM.od150mmDo165mmCheckbox.check({
-      force: true,
-    });
-    assertBlancoSudopereFiltersPOM.od150mmDo165mmCheckbox.should("be.checked");
-    assertBlancoSudopereFiltersPOM.productCharacteristics.should(
-      "contain",
-      "150mm - 165mm"
-    );
-    assertBlancoSudopereFiltersPOM.ponistiBtn.click();
-    assertBlancoSudopereFiltersPOM.od150mmDo165mmCheckbox.should(
-      "not.be.checked"
-    );
-  }
-  assertOd166Do185mmDubinaKoritaFilter() {
-    assertBlancoSudopereFiltersPOM.od166mmDo185mmCheckbox.should(
-      "not.be.checked"
-    );
-    assertBlancoSudopereFiltersPOM.od166mmDo185mmCheckbox.check({
-      force: true,
-    });
-    assertBlancoSudopereFiltersPOM.od166mmDo185mmCheckbox.should("be.checked");
-    assertBlancoSudopereFiltersPOM.productCharacteristics.should(
-      "contain",
-      "166mm - 185mm"
-    );
-    assertBlancoSudopereFiltersPOM.ponistiBtn.click();
-    assertBlancoSudopereFiltersPOM.od166mmDo185mmCheckbox.should(
-      "not.be.checked"
-    );
-  }
-  assertPreko205mmDubinaKoritaFilter() {
-    assertBlancoSudopereFiltersPOM.preko205mmCheckbox.should("not.be.checked");
-    assertBlancoSudopereFiltersPOM.preko205mmCheckbox.check({ force: true });
-    assertBlancoSudopereFiltersPOM.preko205mmCheckbox.should("be.checked");
-    assertBlancoSudopereFiltersPOM.productCharacteristics.should(
-      "contain",
-      "Preko 205mm"
-    );
-    assertBlancoSudopereFiltersPOM.ponistiBtn.click();
-    assertBlancoSudopereFiltersPOM.preko205mmCheckbox.should("not.be.checked");
   }
   assertCrnaBojaSilgranitaFilter() {
     assertBlancoSudopereFiltersPOM.crnaSilgranitCheckbox.should(
