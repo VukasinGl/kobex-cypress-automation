@@ -9,6 +9,7 @@ export const googleMapKobex = "https://maps.google.com/maps?q=loc:Kobex";
 export const productFilters = {
   cm60: "60cm",
   cm56: "56cm",
+  cm50: "50cm",
   cm55: "55cm",
   cm82: "82cm",
   cm186: "186cm",
@@ -24,6 +25,7 @@ export const productFilters = {
   ugradni: "Ugradni",
   ugradna: "Ugradna",
   bela: "Bela",
+  inox: "Inox",
   jacina900W: "900W",
   jacina800W: "800W",
   jacina700W: "700W",
@@ -49,4 +51,6 @@ export const productFilters = {
   dRazred: "D",
   toplotnaPumpa: "Toplotna pumpa",
   grejacem: "Grejačem",
+  staklokeramika: "Staklokeramika",
+  aquaClean: "Aqua clean",
 };
