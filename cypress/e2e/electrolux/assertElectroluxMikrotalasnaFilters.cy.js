@@ -77,7 +77,7 @@ describe("Assert filters on product pages", () => {
     );
   });
 
-  it("Assert Electrolux - Mikrotalasna page filters - 20l filter", () => {
+  it("Assert Electrolux - Mikrotalasna page filters - Da filter", () => {
     cy.assertFilters(
       electroluxMikrotalasnaFiltersPOM.daCheckbox,
       productFilters.da
