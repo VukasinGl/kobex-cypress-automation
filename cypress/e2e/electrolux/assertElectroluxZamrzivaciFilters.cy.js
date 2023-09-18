@@ -50,14 +50,14 @@ describe("Assert filters on product pages", () => {
     );
   });
 
-  it("Assert Electrolux - Zamrzivaci page filters - No frost -Da filter", () => {
+  it("Assert Electrolux - Zamrzivaci page filters - No frost - Da filter", () => {
     cy.assertFilters(
       assertElectroluxZamrzivaciFiltersPOM.noFrostDaCheckbox,
       productFilters.da
     );
   });
 
-  it("Assert Electrolux - Zamrzivaci page filters - No frost -Ne filter", () => {
+  it("Assert Electrolux - Zamrzivaci page filters - No frost - Ne filter", () => {
     cy.assertFilters(
       assertElectroluxZamrzivaciFiltersPOM.noFrostNeCheckbox,
       productFilters.ne

@@ -23,7 +23,7 @@ describe("Assert filters on product pages", () => {
     assertBlancoDozerFiltersBL.assertStenaSivaFilter();
   });
 
-  it("Assert Blanco - Dozer page filters - Vulkasn siva filter", () => {
+  it("Assert Blanco - Dozer page filters - Vulkan siva filter", () => {
     assertBlancoDozerFiltersBL.assertVulkanSivaFilter();
   });
 
@@ -35,7 +35,7 @@ describe("Assert filters on product pages", () => {
     assertBlancoDozerFiltersBL.assertBelaFilter();
   });
 
-  it("Assert Blanco - Dozer page filters - Nezbo bela filter", () => {
+  it("Assert Blanco - Dozer page filters - Nezno bela filter", () => {
     assertBlancoDozerFiltersBL.assertNeznobelaFilter();
   });
 
