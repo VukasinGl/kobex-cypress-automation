@@ -47,7 +47,7 @@ class KontaktPagePOM {
   }
   get rumenkaMap() {
     return cy.get(
-      `iframe[src='${googleMapKobex},Arsenija Čarnojevića 5,Rumenka&t=&z=17&ie=UTF8&iwloc=&output=embed']`
+      "iframe[src='https://maps.google.com/maps?q=loc:Kobex d.o.o. Rumenka,Arsenija Čarnojevića 5,Rumenka&t=&z=17&ie=UTF8&iwloc=&output=embed']"
     );
   }
   get proveriRadnoVremeLink() {
@@ -58,9 +58,7 @@ class KontaktPagePOM {
   get kobexPiB() {
     return cy.contains("100735716");
   }
-  get ulicaIBroj() {
-    return cy.get("div").contains("Arsenija Čarnojevića 5 21201 Rumenka");
-  }
+
   get popunitePoljeMsg() {
     return cy.get("li").contains("Popunite polje");
   }
