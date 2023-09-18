@@ -29,6 +29,7 @@ export const productFilters = {
   jacina900W: "900W",
   jacina800W: "800W",
   jacina700W: "700W",
+  jacina1200W: "1200W",
   mehanicko: "Mehaničko",
   naDodir: "Na dodir",
   kapacitet9kg: "9kg",
