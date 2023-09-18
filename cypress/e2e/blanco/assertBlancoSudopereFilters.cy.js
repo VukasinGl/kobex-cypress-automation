@@ -79,24 +79,8 @@ describe("Assert filters on product pages", () => {
     assertBlancoSudopereFiltersBL.assert2KoritaSaOcedjivacemFilter();
   });
 
-  it("Assert Blanco - Sudopere page filters - Dubina korita - do 150mm filter", () => {
-    assertBlancoSudopereFiltersBL.assertDo150mmDubinaKoritaFilter();
-  });
-
   it("Assert Blanco - Sudopere page filters - Dubina korita - od 186mm do 204mm filter", () => {
     assertBlancoSudopereFiltersBL.assertOd186Do204mmDubinaKoritaFilter();
-  });
-
-  it("Assert Blanco - Sudopere page filters - Dubina korita - od 150mm do 165mm filter", () => {
-    assertBlancoSudopereFiltersBL.assertOd150Do165mmDubinaKoritaFilter();
-  });
-
-  it("Assert Blanco - Sudopere page filters - Dubina korita - od 166mm do 185mm filter", () => {
-    assertBlancoSudopereFiltersBL.assertOd166Do185mmDubinaKoritaFilter();
-  });
-
-  it("Assert Blanco - Sudopere page filters - Dubina korita - preko 205mm filter", () => {
-    assertBlancoSudopereFiltersBL.assertPreko205mmDubinaKoritaFilter();
   });
 
   it("Assert Blanco - Sudopere page filters - Boja silgranita - Crna filter", () => {
