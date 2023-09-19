@@ -39,7 +39,7 @@ describe("Assert filters on product pages", () => {
     assertElectroluxRerneFiltersBL.assertKatalitickoFilter();
   });
 
-  it("Assert Electrolux - Rerne page filters - crna filter", () => {
+  it("Assert Electrolux - Rerne page filters - Crna filter", () => {
     assertElectroluxRerneFiltersBL.assertCrnaFilter();
   });
 

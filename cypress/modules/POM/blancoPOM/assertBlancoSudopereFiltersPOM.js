@@ -56,20 +56,8 @@ class AssertBlancoSudopereFiltersPOM {
   get korito2SaOcedjivacemCheckbox() {
     return cy.get("input[id='a41a']");
   }
-  get do150mmCheckbox() {
-    return cy.get("input[id='a3017a']");
-  }
   get od186mmDo204mmCheckbox() {
     return cy.get("input[id='a1743a']");
-  }
-  get od150mmDo165mmCheckbox() {
-    return cy.get("input[id='a2a']");
-  }
-  get od166mmDo185mmCheckbox() {
-    return cy.get("input[id='a20a']");
-  }
-  get preko205mmCheckbox() {
-    return cy.get("input[id='a146a']");
   }
   get crnaSilgranitCheckbox() {
     return cy.get("input[id='a1386a']");

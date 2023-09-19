@@ -36,7 +36,7 @@ describe("Assert filters on product pages", () => {
     );
   });
 
-  it("Assert Teka - Zamrzivaci page filters - No frost -Ne filter", () => {
+  it("Assert Teka - Zamrzivaci page filters - No frost - Ne filter", () => {
     cy.assertFilters(
       assertTekaZamrzivaciFiltersPOM.noFrostNeCheckbox,
       productFilters.ne

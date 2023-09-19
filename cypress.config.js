@@ -12,4 +12,5 @@ module.exports = defineConfig({
     },
   },
   video: false,
+  screenshotOnRunFailure: false,
 });

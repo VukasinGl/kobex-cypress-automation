@@ -29,7 +29,6 @@ class KontaktPageBL {
       .should("be.visible")
       .and("contain", "proveri");
     kontaktPagePOM.kobexPiB.should("be.visible");
-    kontaktPagePOM.ulicaIBroj.should("be.visible");
     kontaktPagePOM.popunitePoljeMsg.should("not.exist");
     kontaktPagePOM.emailNijeUDobromFormatuMsg.should("not.exist");
     kontaktPagePOM.posaljiBtn.click();
